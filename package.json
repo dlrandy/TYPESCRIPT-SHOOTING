@@ -1,0 +1,20 @@
+{
+  "name": "TYPESCRIPT-SHOOTING",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lerna": "^3.10.5"
+  },
+  "dependencies": {
+    "@types/node": "^10.12.18",
+    "node-fetch": "^2.3.0",
+    "typescript": "^3.2.2"
+  }
+}
