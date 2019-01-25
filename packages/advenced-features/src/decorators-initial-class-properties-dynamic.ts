@@ -8,8 +8,12 @@ interface ITodo {
 }
 
 class TodoService {
+  @First()
   @Get("https://jsonplaceholder.typicode.com/todos")
   todos!: Promise<ITodo[]>;
+  test(){
+
+  }
 }
 
 // function GetTodos(target: any, name: string) {
@@ -28,9 +32,12 @@ class TodoService {
 //   });
 // }
 function Get(url:string) {
+ console.log("Get ");
+
   return function GetTodos(target: any, name: string) {
     console.log("name ", name);
     console.log("target ", typeof target, target );//new target()
+    console.log(target, target === TodoService.prototype);
     const hiddenInstanceKey = "_$$" + name + "$$_";
     const init = () => {
       return fetchh(url).then(response =>
@@ -40,13 +47,15 @@ function Get(url:string) {
     Object.defineProperty(target, name, {
       get: function() {
         return this[hiddenInstanceKey] || (this[hiddenInstanceKey] = init());
-      }
+      },
+      configurable: true
     });
   }
 
 }
 
 function First() {
+ console.log("First ");
   return function (target:any, name: string) {
     const hiddenInstanceKey = '_$$' + name + '$$_';
     const prevInit = (<PropertyDescriptor>Object.getOwnPropertyDescriptor(target, name)).get;
@@ -75,4 +84,4 @@ todoService2.todos.then(todos => {
   console.log('aaaa');
 });
 
-console.log(TodoService)
+

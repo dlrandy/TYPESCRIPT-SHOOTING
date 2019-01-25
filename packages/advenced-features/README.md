@@ -54,9 +54,9 @@ TS 里type alises可以使用generic来进行无限的动态的引用自身。
 在使用conditional type的时候，可以访问infer关键字
 
 
-decorator提供了强大高效且可读的抽象能力
+decorator提供了强大高效且可读的抽象能力；还可以进行链式
 
-所有的@decorator都是函数，基于修饰的对象的不同提供不同的参数
+所有的@decorator都是函数，基于修饰的对象的不同提供不同的参数.对于链式的decorator，调用是自顶向上的，如果是工厂函数则是现有上再由下
 
 
 
