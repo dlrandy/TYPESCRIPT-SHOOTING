@@ -53,6 +53,8 @@ TS 里type alises可以使用generic来进行无限的动态的引用自身。
 
 在使用conditional type的时候，可以访问infer关键字
 
+在extends表达式里，使用conditional types的时候，可以使用infer来获取数组元素的类型或者函数的返回类型
+
 
 decorator提供了强大高效且可读的抽象能力；还可以进行链式
 
