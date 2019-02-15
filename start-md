@@ -1,0 +1,9 @@
+### TS  VS  JS
+> js的type是根据value来进行推导的；这样的副作用就是type的改变会增加js 程序的复杂性;
+>TS 强化了的type的不可变性，减少了潜在的错误value影响程序的正常运行；同时提供了显示类型
+> 在TS里enum和symbol的使用以及创建新的domain对象是常有的
+
+### var VS const VS let
+> TS里可以使用let const var  定义变量；public private protected可以定义class级别的变量;
+> 对于number TS 还支持数字分隔符。对于null， 如果开启了 strictNullCheck, 那么使用null赋值的时候
+> 要么是允许null的any要么是联合类型。
