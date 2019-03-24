@@ -1,0 +1,13 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./lib",
+    "strictPropertyInitialization":true,
+    "strictNullChecks": true,
+    "experimentalDecorators": true,
+    "module": "commonjs"
+  },
+  "include": [
+    "./src"
+  ]
+ }

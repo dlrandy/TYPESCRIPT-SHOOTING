@@ -1,0 +1,30 @@
+{
+  "name": "algrithms",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "dlrandy <1208484996@qq.com>",
+  "homepage": "https://github.com/dlrandy/TYPESCRIPT-SHOOTING#readme",
+  "license": "ISC",
+  "main": "lib/algrithms.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dlrandy/TYPESCRIPT-SHOOTING.git"
+  },
+  "scripts": {
+    "tqa": "tsc",
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/dlrandy/TYPESCRIPT-SHOOTING/issues"
+  }
+}

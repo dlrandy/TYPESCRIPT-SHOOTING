@@ -1,0 +1,1 @@
+{"version":3,"file":"automatic-type-infere.js","sourceRoot":"","sources":["automatic-type-infere.ts"],"names":[],"mappings":"AAaA,SAAS,QAAQ,CAAC,GAAiB;IAIjC,IAAI,MAAM,IAAI,GAAG,EAAE;QACjB,gBAAgB,CAAC,GAAG,CAAC,IAAI,CAAC,CAAC;KAC5B;SAAM;QACL,eAAe,CAAC,GAAG,CAAC,KAAK,CAAC,CAAC;KAC5B;AACH,CAAC;AAED,SAAS,OAAO,CAAC,GAAiB;IAChC,OAAgB,GAAI,CAAC,IAAI,KAAK,SAAS,CAAC;AAC1C,CAAC"}
