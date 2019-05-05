@@ -21,7 +21,7 @@
     "url": "git+https://github.com/dlrandy/TYPESCRIPT-SHOOTING.git"
   },
   "scripts": {
-    "tqs": "tsc",
+    "tqs": "tsc -w",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
