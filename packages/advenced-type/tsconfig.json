@@ -4,6 +4,9 @@
     "outDir": "./lib",
     "strictPropertyInitialization":true,
     "strictNullChecks": true,
+    // "keyofStringsOnly": true,
+    "strictFunctionTypes": true,
+    "noImplicitReturns": true,
     "experimentalDecorators": true,
     "module": "commonjs"
   },
