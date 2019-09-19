@@ -159,6 +159,35 @@ interface  VS type
 声明合并，同名的声明合并(命名空间， enum，interface)。interface的情况要求
 属性的声明类型必须一致。
 
+implements
+限制类尽可能正确的实现
+
+interface 可以声明实例的属性，但是不能声明可见性修饰符(private public protected),
+而且也不能使用static，但是可以标记属性为readonly
+
+interface VS 抽象类
+interface更通用轻量；抽象类更专用特性更丰富。
+
+interface可以model：object, array, function, class, class instance；
+不会生成代码
+
+abstract class只能model class；可以由构造器，提供默认的实现，给属性和方法设置
+访问修饰符
+
+当一个实现由多个class共享的时候，使用abstract class；
+当要class是这个interface的时候，使用interface
+
+class是结构化类型的
+;class兼容同样shape的其他类型；如果一个class有private、protected的fields时候，如果一个shape
+不是该类的实例或者子类的话，这个shape是不能赋值给class的
+
+class声明values和types
+
+
+typescript的类型和values是独立命名空间的
+
+class和enum比较特殊，直接生成type和value
+
 
 
 
