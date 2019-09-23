@@ -188,6 +188,65 @@ typescript的类型和values是独立命名空间的
 
 class和enum比较特殊，直接生成type和value
 
+想函数和类型一样，class和interface支持泛型类型参数，限制泛型域到整个class，、
+interface或者特定的方法
+
+类作用域的泛型可用在实例的方法和属性以及构造方法上；
+构造方法不能声明泛型；
+实例方法也可以有自己的泛型；
+静态方法不能访问类的泛型；
+
+mixin
+主要是用来模拟多继承的，特别是在描述can和has-a关系的时候，而不是is-a。
+是一种将行为和属性混入到class里的一种模式
+mixin可以有state；
+只能提供实际的方法；
+可以有构造器，调用的顺序和混入的顺序一致；
+
+Decorastors是对class， class methods，properties，method parameters进行元数据编程；
+是一种对修饰的的东西调用一个函数
+
+decorator不会改变被修饰对象的shape---不会增加或者移除方法和属性；
+在编译的时候typescript的decorator会检查返回的class是否可以分配给传递过来的class
+
+模拟finalclass
+只需要时候private constructor
+
+设计模式
+工厂模式：
+创建同类型对象的方式，具体创建哪种对象由特定的工厂决定创建
+builder 模式：
+隔离对象的创建和对象的实际实现
+
+typescript会将运行时异常移到编译时：从丰富的类型系统到强大的静态和标识符分析，以至于
+不会产生误拼写的变量和空指针异常等
+
+typescript里描述和处理错误的常见模式：
+1，return null
+2,throw exception
+3,reeturn exception
+4,Option 类型
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
